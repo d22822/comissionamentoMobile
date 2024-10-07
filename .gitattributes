@@ -1,0 +1,8 @@
+# Normalizar finais de linha para arquivos de texto
+* text=auto
+
+# Manter finais de linha LF para arquivos específicos
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf

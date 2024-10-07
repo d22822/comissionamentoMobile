@@ -1,0 +1,32 @@
+.titleSection {
+    display: flex;
+    color: var(--white);
+    font-family: 'InterRegular';
+    font-size: 0.7em;
+    font-weight: 700;
+    line-height: normal;
+    background-color: black;
+    border-radius: 6px;
+    height: 3em;
+    width: 100%;
+    align-items: center;
+    padding: 1em;
+    border: 0.5px solid black;
+  }
+  .toggleButton {
+    background-color: #008CBA; /* Cor azul clara */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .toggleButton:hover {
+    background-color: #006f98; /* Cor azul escura */
+  }

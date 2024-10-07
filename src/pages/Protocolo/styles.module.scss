@@ -1,0 +1,230 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'InterRegular';
+    width: 90%;
+    margin-left: 5%;
+    overflow: auto;
+}
+body{
+    overflow: auto;
+}
+.header{
+    font-weight: 10;
+    color: gray;
+    border-collapse: collapse;
+    margin-top: 8px;
+    
+}
+.header td{
+    border: 0.5px solid gray;
+    text-align: left;
+    margin: 0;
+}
+.dadosGerais{
+    margin-top: 2rem;
+}
+.dadosGerais {
+    width: 100%;
+    margin: 20px 0;
+    font-family:'InterRegular';
+  }
+  
+  .dadosGerais label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .dadosGerais table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Define o layout fixo */
+  }
+  
+  .dadosGerais td {
+    border: 1px solid black; /* Borda pontilhada */
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .dadosGerais td strong {
+    font-weight: bold;
+  }
+  
+  .dadosGerais tr td:first-child {
+    width: 70%; /* Largura da primeira célula */
+  }
+  
+  .dadosGerais tr td:last-child {
+    width: 30%; /* Largura da segunda célula */
+  }
+  
+  /* Para aplicar estilos consistentes a cada linha */
+  .dadosGerais tr:nth-child(odd) td {
+    border-top: 1px solid black;
+  }
+  
+    .dadosGerais tr:nth-child(even) td {
+    border-top: 1px solid black;
+  }
+  
+  /* Adiciona bordas ao redor dos cabeçalhos ou células com colspan */
+  .dadosGerais td[colspan="2"] {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .tabelaVerificacoes {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tabelaVerificacoes table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabelaVerificacoes th, 
+  .tabelaVerificacoes td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .tabelaVerificacoes th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .tabelaVerificacoes tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Coluna do "ITEM" */
+  .tabelaVerificacoes td:first-child, 
+  .tabelaVerificacoes th:first-child {
+    width: 5%;
+    text-align: center;
+  }
+  
+  /* Coluna de "VERIFICAÇÕES - EQA" */
+  .tabelaVerificacoes td:nth-child(2),
+  .tabelaVerificacoes th:nth-child(2) {
+    width: 75%;
+  }
+  
+  /* Coluna de "STATUS" */
+  .tabelaVerificacoes td:last-child, 
+  .tabelaVerificacoes th:last-child {
+    width: 20%;
+  }
+  .tabelaVerificacoes label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .checkboxResult {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkboxResult table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+  .checkboxResult th, 
+  .checkboxResult td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .checkboxResult th {
+    background-color: #f0f0f0; 
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .checkboxResult td {
+    width: 50%; 
+    text-align: center;
+  }
+  
+  .checkboxResult input[type="checkbox"] {
+    margin-left: 10px; 
+  }
+  .aprove {
+    width: 100%;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .aprove table {
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  
+  .aprove th, 
+  .aprove td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .aprove th {
+    background-color: #f0f0f0; 
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .aprove tr:nth-child(even) {
+    background-color: #f9f9f9; 
+  }
+  .aprove td, .aprove th {
+    width: 20%; 
+  }
+
+  .aprove td:first-child, 
+  .aprove th:first-child {
+    text-align: center;
+  }
+
+/* Table Header Version */
+@media(min-width: 500px){
+    .header{
+        font-weight: 10;
+        color: gray;
+        border-collapse: collapse;
+        margin-top: 8px;
+        width: 100%;
+        
+    }
+    .header td{
+        border: 0.5px solid gray;
+        text-align: left;
+        margin: 0;
+    }
+    
+}
+@media (max-width: 500px){
+    .container{
+      width: 100%;
+      margin: 0;
+    }
+    .header{
+      width: 100%;
+    }
+  
+} 
+  

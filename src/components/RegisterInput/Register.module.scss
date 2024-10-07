@@ -1,0 +1,29 @@
+.RegisterInput{
+    display: flex;
+    flex-direction: column;
+    bottom: 1rem;
+    width: 100%;
+}
+.RegisterInput label{
+    font-size: 1rem;
+    font-weight: 480;
+    font-family: InterRegular;
+    margin-bottom: 0.5rem;
+    margin-left: 0.2rem;
+}
+.RegisterInput input::-webkit-input-placeholder{
+    font-weight: 100;
+    font-family: InterRegular;
+}
+
+.RegisterInput input{
+    height: 2.3rem;
+    background-color: #f3f3f3;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: InterRegular;
+    font-weight: 100;
+    color: black;
+}

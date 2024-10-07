@@ -1,0 +1,205 @@
+@import "../src/assets/vendor/modal.css";
+@import "../src/assets/css/theme.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+
+@font-face {
+  font-family: 'InterRegular';
+  src: local('InterRegular'), local('Inter Regular'), url('./fonts/InterRegular.ttf'), format('ttf');
+}
+
+@font-face {
+  font-family: 'InterBold';
+  src: local('InterBold'), local('Inter Bold'), url('./fonts/InterBold.ttf'), format('ttf');
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: local('RobotoRegular'), local('Roboto Regular'), url('./fonts/RobotoRegular.ttf'), format('ttf');
+}
+
+@font-face {
+  font-family: "Inter var";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: "Regular";
+  src: url("./fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
+@font-face {
+  font-family: "Inter var";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: "Italic";
+  src: url("./fonts/Inter-italic.var.woff2?v=3.19") format("woff2");
+}
+
+:root {
+  font-family: "Inter var", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-variation-settings: normal;
+  --font-family: "Inter var", sans-serif;
+  --font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --white: #fff;
+  --black-087: rgba(0, 0, 0, 0.87);
+  --black-006: rgba(0, 0, 0, 0.06);
+  --black-060: rgba(0, 0, 0, 0.60);
+  --black-026:  rgba(0, 0, 0, 0.26);
+  --black-012: rgba(0, 0, 0, 0.12);
+  --dark-900: #101026;
+  --dark-700: #1d1d2e;
+  --gray-100: #D9D9D9;
+  --green-900: #3fffa3;
+  --red-900: #ff3f4b;
+
+
+  --main-black: #000;
+  --main-blue: #2B3639;
+  --main-orange: #DC6B16;
+  --main-heavy-orange: #C0641F;
+  --main-light-gray: #D9D9D9;
+  --main-heavy-gray: #909090;
+
+  --aux-yellow: #D0B21A;
+  --aux-green: #008466;
+  --aux-blue: #4889C4;
+  --aux-red:#C1272D;
+  --aux-pink: #C05B8C;
+  --aux-beige: #D4D7A3;
+
+  --elem-blue: #2C3E50;
+
+}
+
+button {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+a {
+  color: inherited;
+  text-decoration: none;
+}
+
+html, body {
+  background-color: var(--white);
+  height: 100%;
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem InterRegular;
+  font-weight: bold; 
+  /*color:  var(--gray-100);*/
+  box-shadow: none;  
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-components{
+  flex: 1;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; // = 14px
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; // = 15px
+  }
+}
+
+/* Loading */
+.loading_tela_cheia {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #3878bc;
+  z-index: 100;
+}
+
+.loading_tela_cheia img,
+.loading_tela_cheia_transparente img {
+  width: 6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -4em 0 0 -3em;
+  animation: loader 2s ease infinite;
+  -webkit-animation: loader 2s ease infinite;
+  -moz-animation: loader 2s ease infinite;
+  -o-animation: loader 2s ease infinite;
+}
+
+.loading_tela_cheia_transparente {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 100000;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loader {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* /Loading */
