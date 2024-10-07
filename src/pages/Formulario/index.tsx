@@ -12,10 +12,8 @@ import DropDown from '../../components/DropDown';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import Protocolo from '../Protocolo';
-import { useParams } from 'react-router-dom';
 
 export default function Formulario() {
-    const {tag} = useParams() 
     const [verificacao1, setVerificacao1] = useState('');
     const [verificacao2, setVerificacao2] = useState('');
     const [verificacao3, setVerificacao3] = useState('');
@@ -41,7 +39,7 @@ export default function Formulario() {
     };
 
     const handleSavePDF = () => {
-        const protocoloElement = document.getElementById(`Protocolo-${tag}`);
+        const protocoloElement = document.getElementById('Protocolo-VMZ-0001');
         if (!protocoloElement) {
             console.error('Elemento Protocolo não encontrado.');
             return;
@@ -67,7 +65,7 @@ export default function Formulario() {
                 });
     
                 pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-                pdf.save(`Protocolo-${tag}.pdf`);
+                pdf.save('Protocolo-VMZ-0001');
             })
             .catch((error) => {
                 console.error('Erro ao gerar o PDF:', error);
@@ -240,7 +238,7 @@ export default function Formulario() {
                     <button type="button" onClick={handleSavePDF}>Salvar</button>
                 </form>
             </div>
-            <div id={`Protocolo-${tag}`} style={{display: "none"}}>
+            <div id={'Protocolo-VMZ-0001'} style={{display: "none"}}>
                 <Protocolo
                     EmpresaExecutor={empresaExecutor}
                     ResponsavelExecutor={responsavelExecutor}
@@ -259,7 +257,7 @@ export default function Formulario() {
                     Dado6={verificacao6}
                     Dado7={verificacao7}
                     Dado8={verificacao8}
-                    tag={tag}
+                    tag="VMZ-00001"
                     accept={accept}
                     notAccept={notAccept}
                 />

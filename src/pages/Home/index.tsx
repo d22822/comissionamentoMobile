@@ -38,7 +38,7 @@ export default function Home() {
             <div className={styles.buttons}>
                 <button onClick={() => openFile(pdf)}>Manual</button>
                 <button>Desenho</button>
-                <button onClick={() => {document.location.href = tag + '/Protocolo'}}>Protocolo</button>
+                <button onClick={() => {document.location.href ='/Protocolo'}}>Protocolo</button>
             </div>
             
             <Footer />

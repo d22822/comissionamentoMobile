@@ -20,7 +20,7 @@ function App() {
       element: <Home/> 
     },
     {
-      path: "/:tag/Protocolo",
+      path: "/Protocolo",
       element: <Formulario/>
     },
     {
