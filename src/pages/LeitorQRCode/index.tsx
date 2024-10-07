@@ -10,7 +10,7 @@ export default function LeitorQrCode() {
 
     //Função Para Direcionamento da pagina
     function handleRedirect(tag: String) {
-        window.location.href = `/ComissionamentoMobile/${tag}`
+        window.location.href = `/${tag}`
     }
 
     
