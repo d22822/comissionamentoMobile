@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 831 304">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #2b285c;
+        font-family: Lato-Black, Lato;
+        font-size: 44.5px;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        fill: #dc6b16;
+      }
+
+      .cls-5 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <g>
+        <polygon class="cls-2" points="244.48 164.18 244.23 86.86 220.77 79.23 221.12 156.56 220.77 156.78 153.84 198.4 78.85 172.09 54.14 187.53 152.83 221.98 243.83 164.68 244.48 164.18"/>
+        <polygon class="cls-2" points="194.67 151.11 194.66 150.87 194.29 96.16 170.83 88.53 171.2 143.31 158.36 150.98 128.14 141.15 103.62 156.61 139.39 168.24 156.78 174.54 194.33 151.32 194.67 151.11"/>
+      </g>
+      <polygon class="cls-3" points="294.8 182.04 294.42 61.76 270.96 54.14 271.33 174.34 271.33 174.34 235.46 198.34 183.48 232.64 206.94 240.27 207.09 240.17 240.13 250.71 263.91 235.01 230.69 224.6 253.65 209.45 253.7 209.46 258.92 205.97 261.31 204.39 261.29 204.38 294.71 182.02 294.8 182.04"/>
+    </g>
+    <path class="cls-2" d="M128.14,141.96"/>
+  </g>
+  <text class="cls-4" transform="translate(313.69 108.1)"><tspan class="cls-1"><tspan x="0" y="0">COMISSIONAMENTO</tspan></tspan><tspan class="cls-5"><tspan x="0" y="53.4">DIGITAL</tspan></tspan></text>
+</svg>
