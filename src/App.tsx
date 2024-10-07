@@ -12,23 +12,23 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/ComissionamentoMobile",
+      path: "/",
       element: <LeitorQrCode/>
     },
     {
-      path: "/ComissionamentoMobile/:tag",
+      path: "/:tag",
       element: <Home/> 
     },
     {
-      path: "/ComissionamentoMobile/:tag/Protocolo",
+      path: "/:tag/Protocolo",
       element: <Formulario/>
     },
     {
-      path: "/ComissionamentoMobile/404",
+      path: "/404",
       element: <Error404/>
     },
     {
-      path: "/ComissionamentoMobile/teste",
+      path: "/teste",
       element: <Protocolo EmpresaExecutor='Lynx' ResponsavelExecutor='Rafael' DataExecutor='05/10' EmpresaVerificador='TSA' ResponsavelVerificador='Mateus' DataVerificador='06/10' EmpresaAprovador='TSA' ResponsavelAprovador='Juliano' DataAprovador='07/10' Dado1="C" Dado2='C' Dado3='C' Dado4='CA' Dado5='C' Dado6='CA' Dado7='C' Dado8='C' tag="Tag1" accept={1} notAccept={0}/>
     }
   ]);
