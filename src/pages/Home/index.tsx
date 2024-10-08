@@ -1,7 +1,8 @@
 import styles from './styles.module.scss';
 import logo from '../../assets/svg/LOGO-White.svg'
 import { useEffect } from 'react';
-import pdf from "../../pdf/Lista2- Manipulação de Arquivos(1).pdf"
+import manual from "../../pdf/Manual.pdf"
+import desenho from "../../pdf/Desenho.pdf"
 import { Footer } from '../../components/Footer';
 import { useParams } from 'react-router-dom';
 
@@ -36,8 +37,8 @@ export default function Home() {
             </div>
 
             <div className={styles.buttons}>
-                <button onClick={() => openFile(pdf)}>Manual</button>
-                <button>Desenho</button>
+                <button onClick={() => openFile(manual)}>Manual</button>
+                <button onClick={() => openFile(desenho)}>Desenho</button>
                 <button onClick={() => {document.location.href ='/Protocolo'}}>Protocolo</button>
             </div>
             
