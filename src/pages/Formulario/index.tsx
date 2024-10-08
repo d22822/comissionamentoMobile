@@ -215,14 +215,14 @@ export default function Formulario() {
                     <DropDown
                         options={Verificacao}
                         Label="Verificação de vibração e ruídos dentro da normalidade?"
-                        valor={verificacao8}
+                        valor={verificacao16}
                         aoAlterado={(valor) => setVerificacao16(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
                         Label="Verificado e testado junto ao supervisório a indicação dos sensores de temperatura?"
-                        valor={verificacao16}
+                        valor={verificacao17}
                         aoAlterado={(valor) => setVerificacao17(valor)}
                         Obrigatorio={true}
                     />
