@@ -29,7 +29,7 @@ function App() {
     },
     {
       path: "/teste",
-      element: <Protocolo EmpresaExecutor='Lynx' ResponsavelExecutor='Rafael' DataExecutor='05/10' EmpresaVerificador='TSA' ResponsavelVerificador='Mateus' DataVerificador='06/10' EmpresaAprovador='TSA' ResponsavelAprovador='Juliano' DataAprovador='07/10' Dado1="C" Dado2='C' Dado3='C' Dado4='CA' Dado5='C' Dado6='CA' Dado7='C' Dado8='C' tag="Tag1" accept={1} notAccept={0}/>
+      element: <Protocolo EmpresaExecutor='Lynx' ResponsavelExecutor='Rafael' DataExecutor='05/10' EmpresaVerificador='TSA' ResponsavelVerificador='Mateus' DataVerificador='06/10' EmpresaAprovador='TSA' ResponsavelAprovador='Juliano' DataAprovador='07/10' Dado1="C" Dado2='C' Dado3='C' Dado4='CA' Dado5='C' Dado6='CA' Dado7='C' Dado8='C' Dado9='C' Dado10="C" Dado11="C" Dado12='C' Dado13='C' Dado14='CA' Dado15='C' Dado16='CA' Dado17='C' tag="Tag1" accept={1} notAccept={0}/>
     }
   ]);
 

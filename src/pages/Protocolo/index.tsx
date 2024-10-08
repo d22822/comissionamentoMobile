@@ -17,23 +17,32 @@ interface ProtocoloProps {
     Dado6: string;
     Dado7: string;
     Dado8: string;
+    Dado9: string;
+    Dado10: string;
+    Dado11: string;
+    Dado12: string;
+    Dado13: string;
+    Dado14: string;
+    Dado15: string;
+    Dado16: string;
+    Dado17: string;
     tag: string | undefined;    
     accept: number;
     notAccept: number;
 }
 
-export default function Protocolo({EmpresaExecutor, ResponsavelExecutor, DataExecutor, EmpresaVerificador ,ResponsavelVerificador, DataVerificador, EmpresaAprovador, ResponsavelAprovador, DataAprovador,Dado1, Dado2, Dado3, Dado4, Dado5, Dado6, Dado7, Dado8, tag, accept, notAccept} : ProtocoloProps) {
+export default function Protocolo({EmpresaExecutor, ResponsavelExecutor, DataExecutor, EmpresaVerificador ,ResponsavelVerificador, DataVerificador, EmpresaAprovador, ResponsavelAprovador, DataAprovador,Dado1, Dado2, Dado3, Dado4, Dado5, Dado6, Dado7, Dado8, Dado9,Dado10, Dado11, Dado12, Dado13, Dado14, Dado15, Dado16, Dado17, accept, notAccept} : ProtocoloProps) {
     return(
         <div className={styles.container}>
             <div>
                 <table className={styles.header}>
                     <tr>
-                        <td><strong>Projeto</strong><br />Projeto ferro carajás</td>
-                        <td><strong>Atividade</strong><br /> Inspeção De Pré-Comissionamento</td>
+                        <td><strong>Projeto</strong><br />Projeto 6 MTPA - MIN. CORUMBAENSE</td>
+                        <td><strong>Atividade</strong><br />PROTOCOLO DE COMISSIONAMENTO COM CARGA</td>
                     </tr>
                     <tr>
-                        <td><strong>TAG</strong><br />{tag}</td>
-                        <td><strong>Descrição</strong><br /> Nota1</td>
+                        <td><strong>TAG</strong><br />VMZ-00001</td>
+                        <td><strong>Descrição</strong><br />AM02 - Motor Principal</td>
                     </tr>
                 </table>
 
@@ -42,88 +51,120 @@ export default function Protocolo({EmpresaExecutor, ResponsavelExecutor, DataExe
                     <table>
                         <thead>
                             <tr>
-                                <td><strong>Sistema/Sub: </strong>Nota 1</td>
-                                <td><strong>Skid: </strong>Nota 2</td>
+                                <td><strong>Sistema/Sub: </strong>SA-04-02</td>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td colSpan={2}><strong>Disc/Fam: </strong>AUTOMAÇÃO/EQA - EQUIPAMENTO DE AUTOMAÇÃO</td>
+                                <td><strong>Disc/Fam: </strong>ELÉTRICA/MOT-MOTOR ELÉTRICO</td>
                             </tr>
                             <tr>
-                                <td><strong>Modelo: </strong>Nota 2</td>
-                                <td><strong>Fabr: </strong>Nota 2</td>
-                            </tr>
-                            <tr>
-                                <td colSpan={2}><strong>N° de Série: </strong>Nota 2</td>
-                            </tr>
-                            <tr>
-                                <td><strong>RM: </strong>Nota 2</td>
-                                <td><strong>Local: </strong>Nota 2</td>
-                            </tr>
-                            <tr>
-                                <td colSpan={2}><strong>Desenho: </strong>Nota 1</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Folha de Dados: </strong>Nota 1</td>
-                                <td><strong>Área: </strong>Nota 2</td>
-                            </tr>
-                            <tr>
-                                <td colSpan={2}><strong>Itens do agrupamento: </strong>Nota 1</td>
+                                <td><strong>Subitens: </strong>-</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div className={styles.tabelaVerificacoes}>
-                    <label><strong>DADOS DA ATIVIDADE - INSPEÇÃO DE PRÉ-COMISSIONAMENTO – AUTOMAÇÃO</strong></label>
+                    <label><strong>DADOS DA ATIVIDADE - PROTOCOLO DE COMISSIONAMENTO COM CARGA</strong></label>
                     <table>
                         <thead>
                             <tr>
                                 <th>ITEM</th>
-                                <th>VERIFICAÇÕES - EQA</th>
+                                <th>VERIFICAÇÕES</th>
                                 <th>STATUS</th>
                             </tr>
                             </thead>
                                 <tbody>
                                     <tr>
+                                        <td colSpan={3} style={{textAlign: 'left'}}>VERIFICAÇÕES GERAIS</td>
+                                    </tr>
+                                    <tr>
                                         <td>1.</td>
-                                        <td>Preservação geral do equipamento (pintura, limpeza e ausência de danos)?</td>
+                                        <td>Identificação do equipamento (TAG) conforme projeto?</td>
                                         <td>{Dado1}</td>
                                     </tr>
                                     <tr>
                                         <td>2.</td>
-                                        <td>Os Protocolos de Completação Mecânica dos cabos de rede, fibra óptica e cabos de sinal estão aprovados e sem pendências impeditivas?</td>
+                                        <td>Aterramento dos componentes conforme projeto?</td>
                                         <td>{Dado2}</td>
                                     </tr>
                                     <tr>
                                         <td>3.</td>
-                                        <td>A documentação referente às comunicações do equipamento está disponível?</td>
+                                        <td>Preservação geral (limpeza e ausência de danos)?</td>
                                         <td>{Dado3}</td>
                                     </tr>
                                     <tr>
                                         <td>4.</td>
-                                        <td>O equipamento se comunica corretamente com seus componentes externos (campo) ao equipamento?</td>
+                                        <td>Instalação de sinalizações de segurança e proteção conforme o projeto?</td>
                                         <td>{Dado4}</td>
                                     </tr>
                                     <tr>
+                                        <td colSpan={3} style={{textAlign: 'left'}}>DESCRIÇÃO</td>
+                                    </tr>
+                                    <tr>
                                         <td>5.</td>
-                                        <td>Os cabos de comunicação estão corretamente conectados no equipamento e de acordo com o seu respectivo diagrama de interligação?</td>
+                                        <td>O eixo do motor elétrico está acoplado ao equipamento?</td>
                                         <td>{Dado5}</td>
                                     </tr>
                                     <tr>
                                         <td>6.</td>
-                                        <td>A comunicação prevista pelo projeto para existir entre seus componentes internos está funcionando corretamente?</td>
+                                        <td>Acionamento do motor elétrico operando conforme projeto?</td>
                                         <td>{Dado6}</td>
                                     </tr>
                                     <tr>
                                         <td>7.</td>
-                                        <td>Foram corretamente configurados os parâmetros e protocolos de comunicação para sincronização do relógio do equipamento com o GPS da Planta Industrial?</td>
+                                        <td>Os diagramas elétricos e diagramas de interligação do equipamento estão disponíveis?</td>
                                         <td>{Dado7}</td>
                                     </tr>
                                     <tr>
                                         <td>8.</td>
-                                        <td>Foram criadas e aplicadas as políticas de segurança e acesso físico e remoto para o equipamento?</td>
+                                        <td>Realização do teste de partida e parada local (botoeira)?</td>
                                         <td>{Dado8}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9.</td>
+                                        <td>Realização do teste de partida e parada remoto (sala de controle)?</td>
+                                        <td>{Dado9}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10.</td>
+                                        <td>Realização do teste de partida e parada remoto (subestação)?</td>
+                                        <td>{Dado10}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.</td>
+                                        <td>Realização do teste de parada de emergência?</td>
+                                        <td>{Dado11}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.</td>
+                                        <td>Verificação / ajuste da parametrização dos dispositivos de proteção e acionamento?</td>
+                                        <td>{Dado12}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13.</td>
+                                        <td>Verificação da corrente / tempo de partida e corrente de regime contínuo?</td>
+                                        <td>{Dado13}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14.</td>
+                                        <td>Verificação da temperatura dos mancais, carcaça e enrolamentos?</td>
+                                        <td>{Dado14}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15.</td>
+                                        <td>Verificação do deslocamento axial do eixo (centro magnético)?</td>
+                                        <td>{Dado15}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16.</td>
+                                        <td>Verificação de vibração e ruídos dentro da normalidade?</td>
+                                        <td>{Dado16}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.</td>
+                                        <td>Verificado e testado junto ao supervisório a indicação dos sensores de temperatura?</td>
+                                        <td>{Dado17}</td>
                                     </tr>
                             </tbody>
                     </table>

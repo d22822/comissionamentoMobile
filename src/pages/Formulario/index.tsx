@@ -22,6 +22,15 @@ export default function Formulario() {
     const [verificacao6, setVerificacao6] = useState('');
     const [verificacao7, setVerificacao7] = useState('');
     const [verificacao8, setVerificacao8] = useState('');
+    const [verificacao9, setVerificacao9] = useState('');
+    const [verificacao10, setVerificacao10] = useState('');
+    const [verificacao11, setVerificacao11] = useState('');
+    const [verificacao12, setVerificacao12] = useState('');
+    const [verificacao13, setVerificacao13] = useState('');
+    const [verificacao14, setVerificacao14] = useState('');
+    const [verificacao15, setVerificacao15] = useState('');
+    const [verificacao16, setVerificacao16] = useState('');
+    const [verificacao17, setVerificacao17] = useState('');
     const [empresaExecutor, setEmpresaExecutor] = useState('');
     const [responsavelExecutor, setResponsavelExecutor] = useState('');
     const [dataExecutor, setDataExecutor] = useState('');
@@ -100,58 +109,121 @@ export default function Formulario() {
                     <p>STATUS: C – CONFORME / NC – NÃO CONFORME / NA – NÃO APLICÁVEL</p>
                     <DropDown
                         options={Verificacao}
-                        Label="Preservação geral do equipamento (pintura, limpeza e ausência de danos)?"
+                        Label="Identificação do equipamento (TAG) conforme projeto?"
                         valor={verificacao1}
                         aoAlterado={(valor) => setVerificacao1(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="Os Protocolos de Completação Mecânica dos cabos de rede, fibra óptica e cabos de sinal estão aprovados e sem pendências impeditivas?"
+                        Label="Aterramento dos componentes conforme projeto?"
                         valor={verificacao2}
                         aoAlterado={(valor) => setVerificacao2(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="A documentação referente às comunicações do equipamento está disponível?"
+                        Label="Preservação geral (limpeza e ausência de danos)?"
                         valor={verificacao3}
                         aoAlterado={(valor) => setVerificacao3(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="O equipamento se comunica corretamente com seus componentes externos (campo) ao equipamento?"
+                        Label="Instalação de sinalizações de segurança e proteção conforme o projeto?"
                         valor={verificacao4}
                         aoAlterado={(valor) => setVerificacao4(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="Os cabos de comunicação estão corretamente conectados no equipamento e de acordo com o seu respectivo diagrama de interligação?"
+                        Label="O eixo do motor elétrico está acoplado ao equipamento?"
                         valor={verificacao5}
                         aoAlterado={(valor) => setVerificacao5(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="A comunicação prevista pelo projeto para existir entre seus componentes internos está funcionando corretamente?"
+                        Label="Acionamento do motor elétrico operando conforme projeto?"
                         valor={verificacao6}
                         aoAlterado={(valor) => setVerificacao6(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="Foram corretamente configurados os parâmetros e protocolos de comunicação para sincronização do relógio do equipamento com o GPS da Planta Industrial?"
+                        Label="Os diagramas elétricos e diagramas de interligação do equipamento estão disponíveis?"
                         valor={verificacao7}
                         aoAlterado={(valor) => setVerificacao7(valor)}
                         Obrigatorio={true}
                     />
                     <DropDown
                         options={Verificacao}
-                        Label="Foram criadas e aplicadas as politicas de segurança e acesso físico e remoto para o equipamento?"
+                        Label="Realização do teste de partida e parada local (botoeira)?"
                         valor={verificacao8}
                         aoAlterado={(valor) => setVerificacao8(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Realização do teste de partida e parada remoto (sala de controle)?"
+                        valor={verificacao9}
+                        aoAlterado={(valor) => setVerificacao9(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Realização do teste de partida e parada remoto (subestação)?"
+                        valor={verificacao10}
+                        aoAlterado={(valor) => setVerificacao10(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Realização do teste de parada de emergência?"
+                        valor={verificacao11}
+                        aoAlterado={(valor) => setVerificacao11(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Verificação / ajuste da parametrização dos dispositivos de proteção e acionamento?"
+                        valor={verificacao12}
+                        aoAlterado={(valor) => setVerificacao12(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Verificação da corrente / tempo de partida e corrente de regime contínuo?"
+                        valor={verificacao13}
+                        aoAlterado={(valor) => setVerificacao13(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Verificação da temperatura dos mancais, carcaça e enrolamentos?"
+                        valor={verificacao14}
+                        aoAlterado={(valor) => setVerificacao14(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Verificação do deslocamento axial do eixo (centro magnético)?"
+                        valor={verificacao15}
+                        aoAlterado={(valor) => setVerificacao15(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Verificação de vibração e ruídos dentro da normalidade?"
+                        valor={verificacao8}
+                        aoAlterado={(valor) => setVerificacao16(valor)}
+                        Obrigatorio={true}
+                    />
+                    <DropDown
+                        options={Verificacao}
+                        Label="Verificado e testado junto ao supervisório a indicação dos sensores de temperatura?"
+                        valor={verificacao16}
+                        aoAlterado={(valor) => setVerificacao17(valor)}
                         Obrigatorio={true}
                     />
                     <HeaderInput Titulo='Validações' />
@@ -257,6 +329,15 @@ export default function Formulario() {
                     Dado6={verificacao6}
                     Dado7={verificacao7}
                     Dado8={verificacao8}
+                    Dado9={verificacao9}
+                    Dado10={verificacao10}
+                    Dado11={verificacao11}
+                    Dado12={verificacao12}
+                    Dado13={verificacao13}
+                    Dado14={verificacao14}
+                    Dado15={verificacao15}
+                    Dado16={verificacao16}
+                    Dado17={verificacao17}
                     tag="VMZ-00001"
                     accept={accept}
                     notAccept={notAccept}
